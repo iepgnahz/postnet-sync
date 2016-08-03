@@ -10,15 +10,15 @@ class RouterSwitcher {
 
   switchRouter(cmd, output) {
     let router = this.routers.find(item =>item.name === this.currentStatus);
-    let result = router.doAction(cmd, (result, output)=> {
-      this.transform(result, output);
+    let result = router.doAction(cmd, (result,output)=>{
+      this.transform(result,output)
     }, output);
   }
 
   start() {
     console.log("欢迎光临!");
 
-    return this.routers.find(item =>item.name === this.currentStatus).help;
+    return this.routers.find(item => item.name === this.currentStatus).help;
   }
 
   transform(result, output) {

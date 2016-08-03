@@ -7,14 +7,13 @@ class BarcodeAction {
     this.help = "请输入条形码或者q退出:";
   }
 
-  doAction(cmd,transform,output) {
+  doAction(cmd, transform, output) {
     if (cmd === "q") {
       let current =  "init";
-      transform(current,output);
+      transform(current, output);
     } else {
       let current = "init";
-      changeBarcodeAction(cmd,transform,current,output)
-
+      changeBarcodeAction(cmd, transform, current, output)
     }
   }
 }
