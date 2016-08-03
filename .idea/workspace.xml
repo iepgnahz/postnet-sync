@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="core.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/core.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="42" column="40" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="40" />
+            <state relative-caret-position="1260">
+              <caret line="86" column="66" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="66" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -87,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChangedPostcode.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChangedPostcode.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sever/ChangedPostcode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="945">
+              <caret line="63" column="52" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -100,7 +100,7 @@
       <file leaf-file-name="ChangedBarcode.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sever/ChangedBarcode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="-934">
               <caret line="4" column="28" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="28" />
               <folding />
             </state>
@@ -131,13 +131,13 @@
       <list>
         <option value="$PROJECT_DIR$/sever/RouterSwitcher.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/sever/ChangedPostcode.js" />
         <option value="$PROJECT_DIR$/sever/ChangedBarcode.js" />
         <option value="$PROJECT_DIR$/client/actions/BarcodeAction.js" />
         <option value="$PROJECT_DIR$/sever/shell.js" />
         <option value="$PROJECT_DIR$/client/actions/PostcodeAction.js" />
-        <option value="$PROJECT_DIR$/client/core.js" />
         <option value="$PROJECT_DIR$/client/RouterSwitcher.js" />
+        <option value="$PROJECT_DIR$/client/core.js" />
+        <option value="$PROJECT_DIR$/sever/ChangedPostcode.js" />
       </list>
     </option>
   </component>
@@ -315,12 +315,12 @@
       <option name="presentableId" value="Default" />
       <updated>1470108145293</updated>
       <workItem from="1470108147749" duration="32804000" />
-      <workItem from="1470208976554" duration="6159000" />
+      <workItem from="1470208976554" duration="7072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38963000" />
+    <option name="totallyTimeSpent" value="39876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="777" extended-state="6" />
@@ -448,22 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sever/ChangedBarcode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sever/ChangedPostcode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/actions/BarcodeAction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -508,11 +492,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="42" column="40" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="40" />
+        <state relative-caret-position="1260">
+          <caret line="86" column="66" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="66" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sever/ChangedBarcode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-934">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sever/ChangedPostcode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="52" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>

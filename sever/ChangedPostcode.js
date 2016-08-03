@@ -61,7 +61,7 @@ class ChangedPostcode {
       let barcodes = changeCode(checkCode, postCode, items);
       return addFrame(barcodes);
     }
-    return "您输入的邮编不合法,应是5,9或者10数字0-9字符,并且若有-,其应在第六位处,请重新输入";
+    return "您输入的邮编不合法,应是5,9或者10数字0-9字符,并且若有-,其应在第六位处";
   }
 }
 
