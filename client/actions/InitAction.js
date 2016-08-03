@@ -6,13 +6,16 @@ class InitAction {
     this.help = '请选择功能:1.邮编转编码 2.编码转邮编 q.退出';
   }
 
-  doAction(cmd) {
+  doAction(cmd,transform,output) {
+    let current = "";
     switch (cmd) {
       case "1":
-        return "postcode";
+        current =  "postcode";
+        transform(current,output);
         break;
       case "2":
-        return "barcode";
+        current = "barcode";
+        transform(current,output);
         break;
       case "q":
         console.log("GoodBye");
@@ -24,5 +27,6 @@ class InitAction {
     }
   }
 }
+
 
 module.exports = InitAction;

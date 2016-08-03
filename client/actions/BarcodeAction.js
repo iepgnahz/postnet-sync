@@ -1,7 +1,5 @@
 "use strict";
-
-
-const ChangedBarcode = require('../../sever/ChangedBarcode');
+var request = require('superagent');
 
 class BarcodeAction {
   constructor() {
@@ -9,22 +7,29 @@ class BarcodeAction {
     this.help = "请输入条形码或者q退出:";
   }
 
-  doAction(cmd) {
-    let changedBarcode = new ChangedBarcode();
+  doAction(cmd,transform,output) {
     if (cmd === "q") {
-      return "init";
+      let current =  "init";
+      transform(current,output);
     } else {
-      // console.log("开始转换,请等待。。。。");
-      let barcode = changedBarcode.changeBarcode(cmd);
-      if (barcode === "您输入的条形码中有不存在的码型" || barcode === "您输入条形码的校验值和真实校验值不符" || barcode === "您输入的条形码不合法") {
-        // console.log(barcode + ",请重新新输入");
-        return "barcode";
-      } else {
-        // console.log("转换结果:" + barcode);
-        return "init";
-      }
+      let current = "init";
+      changeBarcodeAction(cmd,transform,current,output)
+
     }
   }
+}
+
+function changeBarcodeAction(cmd,transform,current,output) {
+  var changedCode = "";
+  request
+    .post(`http://127.0.0.1:5000/barcode`)
+    .type("form")
+    .send({code: cmd.trim()})
+    .end(function (err, res) {
+      changedCode = res.text;
+      console.log(res.text);
+      transform(current,output);
+    });
 }
 
 module.exports = BarcodeAction;

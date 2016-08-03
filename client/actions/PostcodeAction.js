@@ -1,7 +1,5 @@
 "use strict";
-
-
-const ChangedPostcode = require('../../sever/ChangedPostcode');
+var request = require('superagent');
 
 class PostcodeAction {
   constructor() {
@@ -9,19 +7,29 @@ class PostcodeAction {
     this.help = "请输入邮编(q返回上一层):";
   }
 
-  doAction(cmd) {
-    let changedPostcode = new ChangedPostcode();
+  doAction(cmd,transform,output) {
     if (cmd === "q") {
-      return "init";
+      let current =  "init";
+      transform(current,output);
     } else {
-      let barcode = changedPostcode.changePostCode(cmd);
-      if (barcode === "您输入的邮编不合法,应是5,9或者10数字0-9字符,并且若有-,其应在第六位处,请重新输入") {
-        return "postcode";
-      } else {
-        return "init";
-      }
+      let current = "init";
+      changePostcodeAction(cmd,transform,current,output);
     }
   }
 }
+
+function changePostcodeAction(cmd,transform,current,output) {
+  var changedCode = "";
+  request
+    .post(`http://127.0.0.1:5000/postcode`)
+    .type("form")
+    .send({code: cmd.trim()})
+    .end(function (err, res) {
+      changedCode = res.text;
+      console.log(res.text);
+      transform(current,output);
+    });
+}
+
 
 module.exports = PostcodeAction;
