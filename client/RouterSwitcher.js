@@ -10,7 +10,9 @@ class RouterSwitcher {
 
   switchRouter(cmd,output) {
     let router = this.routers.find(item =>item.name === this.currentStatus);
-    let result = router.doAction(cmd,this.transform,output);
+    let result = router.doAction(cmd, (result, output)=> {
+      this.transform(result, output);
+    }, output);
     // let newStatus = this.routers.find(item => item.name === result);
     // this.currentStatus = newStatus.name;
     // return newStatus;
@@ -20,6 +22,7 @@ class RouterSwitcher {
 
   start() {
     console.log("欢迎光临!");
+
     return this.routers.find(item =>item.name === this.currentStatus).help;
   }
 
@@ -28,8 +31,6 @@ class RouterSwitcher {
     this.currentStatus = newStatus.name;
     output(newStatus.help)
   }
-
-
 }
 
 module.exports = RouterSwitcher;
