@@ -52,3 +52,16 @@ describe("start", function () {
     expect(result).toEqual(expectResult);
   });
 });
+
+
+describe('BarcodeAction', ()=> {
+  describe('BarcodeAction', ()=> {
+    fit('should jump back to init action', ()=> {
+      let transform = jasmine.createSpy('spy');
+      let output = jasmine.createSpy('spy');
+      let action = new BarcodeAction();
+      action.doAction('q', transform, output);
+      expect(transform).toHaveBeenCalledWith('init', output);
+    })
+  })
+});

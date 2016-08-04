@@ -17,7 +17,6 @@ class RouterSwitcher {
 
   start() {
     console.log("欢迎光临!");
-
     return this.routers.find(item => item.name === this.currentStatus).help;
   }
 
