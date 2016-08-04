@@ -12,11 +12,11 @@ var changedPostcode = new ChangedPostcode();
 var changedBarcode = new ChangedBarcode();
 app.use(bodyParser.urlencoded({extended: true}));
 // app.use(bodyParser.raw);
-//app.use(express.static("./public"));  //静态文件必须使用该路径且在监听之前
+app.use(express.static("./public"));
 
 app.get('/init', (req, res) => {
   res.sendfile('./')
-})
+});
 
 app.post("/postcode",function(req,res){
   res.send(changedPostcode.changePostCode(req.body.code))

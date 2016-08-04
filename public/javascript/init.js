@@ -3,7 +3,6 @@
  */
 
 $(document).ready(() => {
-  console.log(111);
   menuBtnsAction();
 });
 

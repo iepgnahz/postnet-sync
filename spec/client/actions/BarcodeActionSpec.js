@@ -44,7 +44,7 @@ describe("/barcode",()=>{
       .expect(202, "12345")
       .end((err,res)=>{
         if(err) done.fail(err);
-        // done();
+        // done();????????????????
       })
   });
 
