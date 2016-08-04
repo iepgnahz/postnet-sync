@@ -2,12 +2,11 @@
  * Created by zhangpei on 16/8/2.
  */
 "use strict";
-var request = require('superagent');
 const repl = require('repl');
-var RouterSwitcher = require("./RouterSwitcher");
-var BarcodeAction = require("./actions/BarcodeAction");
-var PostcodeAction = require("./actions/PostcodeAction");
-var InitAction = require("./actions/InitAction");
+const RouterSwitcher = require("./RouterSwitcher");
+const BarcodeAction = require("./actions/BarcodeAction");
+const PostcodeAction = require("./actions/PostcodeAction");
+const InitAction = require("./actions/InitAction");
 
 let routers = [
   new InitAction(),
@@ -17,13 +16,9 @@ let routers = [
 
 let routerSwitcher = new RouterSwitcher(routers);
 
-function start(repl) {
-  console.log(routerSwitcher.start());
-  repl.start({
-    prompt: '> ', eval: function (cmd, context, filename, output) {
-      routerSwitcher.switchRouter(cmd.trim(), output);
-    }
-  });
+function handleCmd(cmd, context, filename, output) {
+  routerSwitcher.switchRouter(cmd.trim(), output);
 }
 
-start(repl);
+console.log(routerSwitcher.start());
+repl.start({ prompt: '-> ', eval: handleCmd});
