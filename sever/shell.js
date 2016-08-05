@@ -5,6 +5,7 @@
 "use strict";
 const express = require("express");
 const bodyParser = require('body-parser');
+const mongodb = require('../dataBase/database');
 const ChangedPostcode = require("./ChangedPostcode");
 const ChangedBarcode = require("./ChangedBarcode");
 var cors = require("cors");
@@ -19,25 +20,33 @@ app.use(express.static("./public"));
 
 app.post("/postcode",function(req,res){
   let answer = changedPostcode.changePostCode(req.body.code);
-  answer.err ? res.send(answer.err) : res.send(answer.barcode)
-
+  if(answer.err) {
+    res.send(answer.err);
+  } else {
+    res.send(answer.barcode);
+    mongodb.insertRecord({code:req.body.code,result:answer.barcode})
+  }
 });
 
 app.post("/barcode",function(req,res){
   let answer = changedBarcode.changeBarcode(req.body.code);
-  answer.err ? res.send(answer.err) : res.send(answer.postcode)
-
+  if(answer.err) {
+    res.send(answer.err);
+  } else {
+    res.send(answer.postcode);
+    mongodb.insertRecord({code:req.body.code,result:answer.postcode})
+  }
 });
 
 
 
-// app.post("/records",function(req,res){
-//   if(!req.body){
-//     res.send({codeItems:null,err:"您的请求不合法"})
-//   } else {
-//     res.send({codeItmes:getRecords()}); //服务器接口
-//   }
-// });
+app.get("/records",function(req, res){
+  mongodb.searchRecords((allItems) => {
+    allItems.reverse();
+    allItems.length = allItems.length <= 10 ? allItems.length : 10
+    res.send(allItems)
+  });//服务器接口
+});
 
 app.listen(5000,function(){
   console.log("listen on 5000");
