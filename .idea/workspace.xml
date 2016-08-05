@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ee98d36-09ac-49e5-a295-f9e3036d4dc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/html/postnet.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascript/postnet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/sever/shellSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sever/shell.js" afterPath="$PROJECT_DIR$/sever/shell.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/client/RouterSwitcherSpec.js" afterPath="$PROJECT_DIR$/spec/client/RouterSwitcherSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/client/actions/BarcodeActionSpec.js" afterPath="$PROJECT_DIR$/spec/client/actions/BarcodeActionSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/client/actions/InitActionSpec.js" afterPath="$PROJECT_DIR$/spec/client/actions/InitActionSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/client/actions/PostcodeActionSpec.js" afterPath="$PROJECT_DIR$/spec/client/actions/PostcodeActionSpec.js" />
-    </list>
+    <list default="true" id="6ee98d36-09ac-49e5-a295-f9e3036d4dc0" name="Default" comment="" />
     <ignored path="selfpractice.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,99 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="barcode.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascript/barcode.js">
+      <file leaf-file-name="RouterSwitcher.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/RouterSwitcher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#41#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascript/init.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="95" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
-              <folding>
-                <element signature="e#0#41#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postcode.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascript/postcode.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#41#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postnet.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascript/postnet.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#41#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postcode.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/html/postcode.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="22" />
+            <state relative-caret-position="144">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="barcode.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/html/barcode.html">
+      <file leaf-file-name="core.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/core.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="50" selection-start-line="4" selection-start-column="1" selection-end-line="7" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/html/init.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postnet.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/html/postnet.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="46" column="74" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shell.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sever/shell.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="396">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -133,14 +45,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shellSpec.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/sever/shellSpec.js">
+      <file leaf-file-name="InitAction.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/actions/InitAction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
+            <state relative-caret-position="144">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
               <folding>
-                <element signature="e#0#41#0" expanded="false" />
+                <marker date="1470327927038" expanded="true" signature="32:616" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BarcodeAction.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/actions/BarcodeAction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostcodeAction.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/actions/PostcodeAction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,8 +84,8 @@
       <list>
         <option value="tsconfig.json" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -197,6 +129,7 @@
         <option value="$PROJECT_DIR$/client/actions/BarcodeAction.js" />
         <option value="$PROJECT_DIR$/public/html/postnet.html" />
         <option value="$PROJECT_DIR$/public/javascript/postnet.js" />
+        <option value="$PROJECT_DIR$/test.html" />
       </list>
     </option>
   </component>
@@ -209,10 +142,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
-    <option name="y" value="33" />
-    <option name="width" value="1276" />
-    <option name="height" value="777" />
+    <option name="x" value="-1329" />
+    <option name="y" value="-744" />
+    <option name="width" value="1329" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -221,7 +154,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -239,124 +172,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
+              <option name="myItemId" value="postnet-sync" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
+              <option name="myItemId" value="postnet-sync" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sever" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selfpractice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
+              <option name="myItemId" value="postnet-sync" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,20 +303,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86705000" />
+    <option name="totallyTimeSpent" value="87416000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="33" width="1276" height="777" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1329" y="-744" width="1329" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940239" sideWeight="0.49237472" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23325808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5076253" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32738096" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -509,23 +346,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascript/barcode.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -533,9 +357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -559,7 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -567,7 +387,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,9 +394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -585,9 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,7 +434,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding />
+          <folding>
+            <marker date="1470327927038" expanded="true" signature="32:616" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -645,9 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,7 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="28" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,7 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,7 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="35" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,23 +527,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascript/lib/postcode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascript/lib/postcode.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,7 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,7 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
           <caret line="39" column="6" selection-start-line="9" selection-start-column="3" selection-end-line="39" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="574">
           <caret line="61" column="6" selection-start-line="5" selection-start-column="3" selection-end-line="61" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,9 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding>
-            <element signature="e#42#84#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -786,18 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="34" column="46" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="65" />
-          <folding>
-            <element signature="e#1#42#0" expanded="false" />
-            <element signature="e#43#85#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/RouterSwitcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,16 +584,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
           <caret line="66" column="3" selection-start-line="56" selection-start-column="0" selection-end-line="66" selection-end-column="3" />
-          <folding>
-            <element signature="e#43#100#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="396">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
@@ -823,9 +599,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/actions/InitAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="144">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <marker date="1470327927038" expanded="true" signature="32:616" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -833,22 +611,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/actions/BarcodeAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="30" />
+        <state relative-caret-position="162">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/actions/PostcodeAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        <state relative-caret-position="162">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -857,9 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="95" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -867,9 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,9 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="36" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -887,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="50" selection-start-line="4" selection-start-column="1" selection-end-line="7" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,9 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -921,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="46" column="74" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,9 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="15" column="38" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -939,9 +697,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/RouterSwitcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
