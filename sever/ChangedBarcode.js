@@ -77,12 +77,12 @@ class ChangedBarcode {
       if (isRightPostCode(barcodeItems, items)) {
         let postCodeItems = calculatePostCodeItems(barcodeItems, items);
         let judgeCD = checkCD(postCodeItems);
-        return judgeCD ? getPostCode(postCodeItems) : "您输入条形码的校验值和真实校验值不符";
+        return judgeCD ? {postcode:getPostCode(postCodeItems)} : {err:"您输入条形码的校验值和真实校验值不符"};
       } else {
-        return "您输入的条形码中有不存在的码型";
+        return {err:"您输入的条形码中有不存在的码型"};
       }
     } else {
-      return "您输入的条形码不合法";
+      return {err:"您输入的条形码不合法"};
     }
   }
 }
