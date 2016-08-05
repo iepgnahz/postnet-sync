@@ -9,10 +9,8 @@ $(document).ready(function() {
       (data) => {
         console.log(data);
         $('#result').html(data);
+        // $('#input').value("");
       }
     )
-  });
-  $('#return').click(function() {
-    window.location.href = "http://127.0.0.1:5000/html/init.html";
   });
 });
