@@ -11,8 +11,7 @@ var app = express();
 var changedPostcode = new ChangedPostcode();
 var changedBarcode = new ChangedBarcode();
 app.use(bodyParser.urlencoded({extended: true}));
-// app.use(bodyParser.raw);
-
+app.use(express.static("./public"));
 
 app.post("/postcode",function(req,res){
   res.send(changedPostcode.changePostCode(req.body.code))
@@ -20,9 +19,12 @@ app.post("/postcode",function(req,res){
 });
 
 app.post("/barcode",function(req,res){
+  console.log(req.body.code);
   res.send(changedBarcode.changeBarcode(req.body.code))
 });
 
 app.listen(5000,function(){
-  console.log("listen on 5000")
+  console.log("listen on 5000");
 });
+
+module.exports = app;

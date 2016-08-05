@@ -2,6 +2,7 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{selfpractice node_modules}" />
+    <file url="file://$PROJECT_DIR$/spec/client/RouterSwitcherSpec.js" libraries="{jasmine-DefinitelyTyped}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
   </component>
 </project>
