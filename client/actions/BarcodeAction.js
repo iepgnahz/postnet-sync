@@ -14,12 +14,11 @@ class BarcodeAction {
     } else {
       let current = "init";
       changeBarcodeAction(cmd,setNewActionAndPrintPrompt,current,output)
-
     }
   }
 }
 
-function changeBarcodeAction(cmd,transform,current,output) {
+function changeBarcodeAction(cmd,callback,current,output) {
   var changedCode = "";
   request
     .post(`http://127.0.0.1:5000/barcode`)
@@ -28,7 +27,7 @@ function changeBarcodeAction(cmd,transform,current,output) {
     .end(function (err, res) {
       changedCode = res.text;
       console.log(res.text);
-      transform(current,output);
+      callback(current,output);
     });
 }
 
