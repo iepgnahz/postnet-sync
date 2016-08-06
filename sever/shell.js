@@ -8,10 +8,10 @@ const bodyParser = require('body-parser');
 const mongodb = require('../dataBase/database');
 const ChangedPostcode = require("./ChangedPostcode");
 const ChangedBarcode = require("./ChangedBarcode");
-var cors = require("cors");
+// var cors = require("cors");
 
 var app = express();
-app.use(cors());
+// app.use(cors());
 
 var changedPostcode = new ChangedPostcode();
 var changedBarcode = new ChangedBarcode();
