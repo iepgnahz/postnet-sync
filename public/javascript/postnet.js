@@ -15,7 +15,7 @@ function fetchRecentRecords() {
 function addOkBtnAction() {
   $('#transform').click(function() {
     $.post(
-      $("input[name='code'][checked]").val(),
+      $("input[name='code'][checked='checked']").val(),
       { code: $('#input').val() },
       (data) => {
         console.log(data);
@@ -25,3 +25,4 @@ function addOkBtnAction() {
     )
   });
 }
+

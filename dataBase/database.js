@@ -3,7 +3,7 @@
  */
 'use strict';
 var MongoClient = require("mongodb").MongoClient;
-let url = 'mongodb://localhost:27017/records';
+let url = 'mongodb://localhost:27017/records';//为了保证可以找到对应数据库
 
 function connectDB(completation){
   MongoClient.connect(url, (err,db)=>{
@@ -24,7 +24,13 @@ function searchRecords(callback) {
     let cursor = db.collection("record").find();
     let allItems = [];
     cursor.each((err,doc)=>{
-      doc !== null ? allItems.push(docToItem(doc)) : callback(allItems,err);
+      if(doc !== null){
+        allItems.push(docToItem(doc));
+      } else {
+        allItems.reverse();
+        allItems.length = allItems.length <= 10 ? allItems.length : 10;
+        callback(allItems,err)
+      };
     });
     db.close();
   });
@@ -33,7 +39,9 @@ function searchRecords(callback) {
 function docToItem(doc) {
   return {
     code : doc.code,
-    result: doc.result
+    result: doc.result,
+    time: doc.time,
+    method: doc.method
   }
 }
 

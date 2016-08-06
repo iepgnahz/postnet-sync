@@ -24,7 +24,8 @@ app.post("/postcode",function(req,res){
     res.send(answer.err);
   } else {
     res.send(answer.barcode);
-    mongodb.insertRecord({code:req.body.code,result:answer.barcode})
+    var myDate = new Date();
+    mongodb.insertRecord({code:req.body.code,result:answer.barcode,time:`${myDate.getFullYear()}/${myDate.getMonth()+1}/${myDate.getDate()}`,method:"from postcode to barcode"})
   }
 });
 
@@ -34,7 +35,8 @@ app.post("/barcode",function(req,res){
     res.send(answer.err);
   } else {
     res.send(answer.postcode);
-    mongodb.insertRecord({code:req.body.code,result:answer.postcode})
+    var myDate = new Date();
+    mongodb.insertRecord({code:req.body.code,result:answer.postcode,time:`${myDate.getFullYear()}/${myDate.getMonth()+1}/${myDate.getDate()}`,method:"from barcode to postcode"})
   }
 });
 
@@ -42,8 +44,6 @@ app.post("/barcode",function(req,res){
 
 app.get("/records",function(req, res){
   mongodb.searchRecords((allItems) => {
-    allItems.reverse();
-    allItems.length = allItems.length <= 10 ? allItems.length : 10
     res.send(allItems)
   });//服务器接口
 });
