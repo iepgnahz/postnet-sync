@@ -1,0 +1,2 @@
+1.所有的前端内容都在public文件夹中,html文件夹中的postnet-html.html是项目的前端页面,不是postnet,html
+2.访问页面  网址必须是  localhost:3000/html/postcode-html.html  我已经将该地址设置成了静态页面,不可以使用别的路径访问

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/common.css">
-  <script src="../javascript/lib/jquery.min.js" charset="utf-8"></script><!--重点:JQuery必须用javascrip引入-->
+  <script src="../javascript/lib/jquery.min.js" charset="utf-8"></script>
   <script src="../javascript/postnet.js"></script>
   <title>Title</title>
   <style>
@@ -42,12 +42,14 @@
   <div>
     <form>
       postcode to barcode
-      <input type="radio" checked="checked" name="code" value="http://127.0.0.1:5000/postcode" id="postcode" />
+      <input type="radio"  name="code"  checked="checked" value="http://127.0.0.1:5000/postcode" id="postcode" />
       barcode to postcode
-      <input type="radio" name="code" value="http://127.0.0.1:5000/barcode" id="barcode" />
+      <input type="radio" name="code"  value="http://127.0.0.1:5000/barcode" id="barcode" />
     </form>
 
   </div>
+
+  <div id="history"></div>
 
   <button id="transform">ok</button>
 
