@@ -4,7 +4,7 @@
 /**
  * Created by zhangpei on 16/7/29.
  */
-import ChangedBarcode from "../../sever/ChangedBarcode";
+import ChangedBarcode from "../../core/ChangedBarcode";
 
 describe("changeBarcode", function () {
   let changedBarcode;

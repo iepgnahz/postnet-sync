@@ -5,50 +5,57 @@
 "use strict";
 const express = require("express");
 const bodyParser = require('body-parser');
-const mongodb = require('../dataBase/database');
-const ChangedPostcode = require("./ChangedPostcode");
-const ChangedBarcode = require("./ChangedBarcode");
-// var cors = require("cors");
+const mongodb = require('./dataBase/database');
+const ChangedPostcode = require("./core/ChangedPostcode");
+const ChangedBarcode = require("./core/ChangedBarcode");
 
 var app = express();
-// app.use(cors());
 
 var changedPostcode = new ChangedPostcode();
 var changedBarcode = new ChangedBarcode();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("./public"));
 
-app.post("/postcode",function(req,res){
+app.post("/postcode", function (req, res) {
   let answer = changedPostcode.changePostCode(req.body.code);
-  if(answer.err) {
+  if (answer.err) {
     res.send(answer.err);
   } else {
     res.send(answer.barcode);
     var myDate = new Date();
-    mongodb.insertRecord({code:req.body.code,result:answer.barcode,time:`${myDate.getFullYear()}/${myDate.getMonth()+1}/${myDate.getDate()}`,method:"from postcode to barcode"})
+    mongodb.insertRecord({
+      code: req.body.code,
+      result: answer.barcode,
+      time: `${myDate.getFullYear()}/${myDate.getMonth() + 1}/${myDate.getDate()}`,
+      method: "from postcode to barcode"
+    })
   }
 });
 
-app.post("/barcode",function(req,res){
+app.post("/barcode", function (req, res) {
   let answer = changedBarcode.changeBarcode(req.body.code);
-  if(answer.err) {
+  if (answer.err) {
     res.send(answer.err);
   } else {
     res.send(answer.postcode);
     var myDate = new Date();
-    mongodb.insertRecord({code:req.body.code,result:answer.postcode,time:`${myDate.getFullYear()}/${myDate.getMonth()+1}/${myDate.getDate()}`,method:"from barcode to postcode"})
+    mongodb.insertRecord({
+      code: req.body.code,
+      result: answer.postcode,
+      time: `${myDate.getFullYear()}/${myDate.getMonth() + 1}/${myDate.getDate()}`,
+      method: "from barcode to postcode"
+    })
   }
 });
 
 
-
-app.get("/records",function(req, res){
+app.get("/records", function (req, res) {
   mongodb.searchRecords((allItems) => {
     res.send(allItems)
   });//服务器接口
 });
 
-app.listen(5000,function(){
+app.listen(5000, function () {
   console.log("listen on 5000");
 });
 

@@ -2,7 +2,7 @@
  * Created by zhangpei on 16/8/5.
  */
 var superTest = require("supertest");
-var app = require("../../sever/shell");
+var app = require("../app");
 var request = superTest(app);
 
 describe('post/postcode', function () {

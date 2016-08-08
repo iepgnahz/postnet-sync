@@ -5,7 +5,7 @@
 /**
  * Created by zhangpei on 16/7/29.
  */
-import ChangedPostcode from "../../sever/ChangedPostcode";
+import ChangedPostcode from "../../core/ChangedPostcode";
 
 describe("changePostCode", function () {
   let changedPostCode;
