@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post-Net</title>
+
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/mystyle.css"/>
+    <script src="../javascript/lib/jquery.min.js" charset="utf-8"></script>
+    <script src="../javascript/valida.js"></script>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <h1 class="text-center">Post-Net</h1>
+    </div>
+</div>
+<hr/>
+
+<div class="row">
+    <form id="translater-form" class="form-horizontal">
+        <div class="form-group myMargin">
+            <label for="input_code" class="col-sm-2 col-sm-offset-2 control-label">
+                Input Code
+            </label>
+            <div class="col-sm-4">
+                <input type="text" id="input_code" name="input_code"
+                       class="form-control" placeholder="Please input code here"/>
+                   <span id="error" style="margin-top: 18px" class="form-control"></span>®
+            </div>
+        </div>
+
+        <div class="form-group myMargin" id="result">
+            <div id='div' class="hidden">
+                <label for="input_code" class="col-sm-2 col-sm-offset-2 control-label">
+                    Result:
+                </label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="traresult" type="text"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid text-center">
+            <input type="radio" name="translate-method" value="http://127.0.0.1:5000/barcode">
+            <label class="checkbox-inline" style="margin-right: 30px"><h4>Barcode to Zipcode</h4>
+            </label>
+            <input type="radio" name="translate-method" value="http://127.0.0.1:5000/postcode" checked>
+            <label class="checkbox-inline " style="margin-left: 5px"><h4>Zipcode to Barcode</h4>
+            </label>
+        </div>
+
+        <div class="row-fluid text-center" role="button">
+            <button class="btn btn-primary btn-lg" id="ok" style="margin-top: 26px"> OK</button>
+        </div>
+    </form>
+
+    <div class="col-sm-6 col-sm-offset-3 control-label">
+        <section class="row-fluid text-center">
+            <div id="bug" class="table-responsive " style="margin-top: 40px" >
+            </div>
+        </section>
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jasmine",
-    "startServer": "babel-node sever/shell.js",
-    "startClient": "babel-node client/core.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,7 +17,6 @@
   },
   "dependencies": {
     "body-parser": "^1.15.2",
-    "cors": "^2.7.1",
     "express": "^4.14.0",
     "mongodb": "^2.2.5",
     "superagent": "^2.1.0"
